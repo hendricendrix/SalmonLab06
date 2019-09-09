@@ -1,55 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Salmon Cookie Table</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <title>Salmon Cookies</title>
 </head>
 <body>
+    <form id="addLocation">
+        <fieldset>
+          <legend>Add a Location</legend>
 
-  <h1></h1>
-  <img src="salmon.png" alt="Salmon Cookies" width="500" height="333">
+          <label for='name'>Location Name</label>
+          <input type='text' name='name' required>
 
-  <h2>Clay's Salmon Cookies</h2>
+          <label for='min'>Minimum Customers Each Hour</label>
+          <input type='number' name='min' required>
 
-  <h3>HTML Table</h3>
+          <label for='max'>Maximum Customers Each Hour</label>
+          <input type='number' name='max' required>
 
+          <label for='averageCookieSale'>Average Cookies Sold Per Person</label>
+          <input type='text' name='averageCookieSale' required>
+
+          <button>Submit</button>
+        </fieldset>
+      </form>
   <table>
-    <tbody>
-    </tr>
+    <tbody id='table'>
 
-    <tr>
-      <td>1st and Pike</td>
-    </tr>
-
-    <tr>
-      <td>Sea-Tac Airport</td>
-    </tr>
-
-    <tr>
-      <td>Seattle Center</td>
-    </tr>
-
-    <tr>
-      <td>Capital Hill</td>
-    </tr>
-
-    <tr>
-      <td>Alki</td>
-    </tr>
-
-    <tr>
-      <td>Totals</td>
-    </tr>
-
-  </tbody>
+    </tbody>
   </table>
-
-  <h2>JS Table</h2>
-  <table>
-    <tbody id="table"></tbody>
-  </table>
-  
   <script src="app.js"></script>
 </body>
 </html>
